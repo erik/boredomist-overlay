@@ -1,12 +1,10 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# Header: $
+# $Header: $
 
 inherit eutils
 
-DESCRIPTION="Nimrod is a new statically typed, imperative programming
-language, that supports procedural, object oriented, functional and
-generic programming styles while remaining simple and efficient."
+DESCRIPTION="A statically typed, imperative programming language."
 HOMEPAGE="http://nimrod-code.org"
 SRC_URI="http://nimrod-code.org/download/nimrod_${PV}.zip"
 LICENSE="GPL-2"
