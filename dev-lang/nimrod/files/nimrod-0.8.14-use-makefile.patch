@@ -1,0 +1,21 @@
+# Nimrod uses its own build system by default, which hardcodes paths
+# and compile options.
+#
+# This patch creates a simple Makefile to make the build process
+# simpler, more configurable, and more maintainable.
+
+--- /dev/null	2012-06-16 13:33:24.447881935 -0400
++++ Makefile	2012-06-17 18:57:08.000000000 -0400
+@@ -0,0 +1,12 @@
++CC     ?= gcc
++CFLAGS += -w -Ibuild/
++
++SRC_DIR="build/linux_$(shell uname -m)"
++
++CSRC=$(shell find $(SRC_DIR) -name "*.c")
++COBJ=$(CSRC:.c=.o)
++
++all: $(COBJ)
++	$(CC) $(COBJ) $(LFLAGS) -o bin/nimrod
++.c.o:
++	$(CC) -c $(CFLAGS) $< -o $@
