@@ -10,7 +10,7 @@
 +CC     ?= gcc
 +CFLAGS += -w -Ibuild/
 +
-+SRC_DIR="build/linux_$(shell uname -m)"
++SRC_DIR="build/sources"
 +
 +CSRC=$(shell find $(SRC_DIR) -name "*.c")
 +COBJ=$(CSRC:.c=.o)
