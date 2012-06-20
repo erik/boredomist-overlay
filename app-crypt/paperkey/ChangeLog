@@ -1,0 +1,9 @@
+# ChangeLog for app-crypt/paperkey
+# Copyright 1999-2012 Gentoo Foundation; Distributed under the GPL v2
+# $Header: $
+
+*paperkey-1.2 (20 Jun 2012)
+
+  20 Jun 2012; <gentoo@erikprice.net> +paperkey-1.2.ebuild, +metadata.xml:
+  paperkey-1.2.ebuild
+
